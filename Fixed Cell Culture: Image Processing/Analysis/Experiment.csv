@@ -1,0 +1,366 @@
+Key,Value
+CellProfiler_Version,4.2.5
+ChannelType_A568,Grayscale
+ChannelType_A647,Grayscale
+ChannelType_CellMask_Green,Grayscale
+ChannelType_Hoechst,Grayscale
+Default_InputFolder,/Users/mb8rg/Desktop/Fixed_Cell_Culture_Image_Processing/Background_Subtracted_Images
+Default_OutputFolder,/Users/mb8rg/Desktop/Fixed_Cell_Culture_Image_Processing
+ImageSet_Zip_Dictionary,b'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48T01FIHhtbG5zPSJodHRwOi8vd3d3Lm9wZW5taWNyb3Njb3B5Lm9yZy9TY2hlbWFzL09NRS8yMDE2LTA2Ij48SW1hZ2UgSUQ9IkhvZWNoc3QiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOkhvZWNoc3QiIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi9Vc2Vycy9tYjhyZy9EZXNrdG9wL0ZpeGVkX0NlbGxfQ3VsdHVyZV9JbWFnZV9Qcm9jZXNzaW5nL0FsaWduZWRfSW1hZ2VzL3IwMmMwMmYwMV9yb3VuZDEtY2gxc2sxZmsxZmwxLnRpZmYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IkNlbGxNYXNrX0dyZWVuIj48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpDZWxsTWFza19HcmVlbiIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6L1VzZXJzL21iOHJnL0Rlc2t0b3AvRml4ZWRfQ2VsbF9DdWx0dXJlX0ltYWdlX1Byb2Nlc3NpbmcvQWxpZ25lZF9JbWFnZXMvcjAyYzAyZjAxX3JvdW5kMS1jaDJzazFmazFmbDEudGlmZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iQTU2OCI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6QTU2OCIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6L1VzZXJzL21iOHJnL0Rlc2t0b3AvRml4ZWRfQ2VsbF9DdWx0dXJlX0ltYWdlX1Byb2Nlc3NpbmcvQWxpZ25lZF9JbWFnZXMvcjAyYzAyZjAxX3JvdW5kMS1jaDNzazFmazFmbDEudGlmZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iQTY0NyI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6QTY0NyIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6L1VzZXJzL21iOHJnL0Rlc2t0b3AvRml4ZWRfQ2VsbF9DdWx0dXJlX0ltYWdlX1Byb2Nlc3NpbmcvQWxpZ25lZF9JbWFnZXMvcjAyYzAyZjAxX3JvdW5kTzw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9IlVURi04Ij8+PE9NRSB4bWxucz0iaHR0cDovL3d3dy5vcGVubWljcm9zY29weS5vcmcvU2NoZW1hcy9PTUUvMjAxNi0wNiI+PEltYWdlIElEPSJIb2VjaHN0Ij48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpIb2VjaHN0IiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovVXNlcnMvbWI4cmcvRGVza3RvcC9GaXhlZF9DZWxsX0N1bHR1cmVfSW1hZ2VfUHJvY2Vzc2luZy9BbGlnbmVkX0ltYWdlcy9yMDJjMDJmMDFfcm91bmQzLWNoMXNrMWZrMWZsMS50aWZmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJDZWxsTWFza19HcmVlbiI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6Q2VsbE1hc2tfR3JlZW4iIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi9Vc2Vycy9tYjhyZy9EZXNrdG9wL0ZpeGVkX0NlbGxfQ3VsdHVyZV9JbWFnZV9Qcm9jZXNzaW5nL0FsaWduZWRfSW1hZ2VzL3IwMmMwZjAxX3JvdW5kMy1jaDJzazFmazFmbDEudGlmZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iQTU2OCI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6QTU2OCIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6L1VzZXJzL21iOHJnL0Rlc2t0b3AvRml4ZWRfQ2VsbF9DdWx0dXJlX0ltYWdlX1Byb2Nlc3NpbmcvQWxpZ25lZF9JbWFnZXMvcjAyYzBmMDFfcm91bmQzLWNoM3NrMWZrMWZsMS50aWZmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJBNjQ3Ij48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpBNjQ3IiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovVXNlcnMvbWI4cmcvRGVza3RvcC9GaXhlZF9DZWxsX0N1bHR1cmVfSW1hZ2VfUHJvY2Vzc2luZy9BbGlnbmVkX0ltYWdlcy9yMDJjMG91bjMiIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi9Vc2Vycy9tYjhyZy9EZXNrdG9wL0ZpeGVkX0NlbGxfQ3VsdHVyZV9JbWFnZV9Qcm9jZXNzaW5nL0FsaWduZWRfSW1hZ2VzL3IwMmMwM2YwMV9yb3VuZDItY2gyPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48T01FIHhtbG5zPSJodHRwOi8vd3d3Lm9wZW5taWNyb3Njb3B5Lm9yZy9TY2hlbWFzL09NRS8yMDE2LTA2Ij48SW1hZ2UgSUQ9IkhvZWNoc3QiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOkhvZWNoc3QiIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi9Vc2Vycy9tYjhyZy9EZXNrdG9wL0ZpeGVkX0NlbGxfQ3VsdHVyZV9JbWFnZV9Qcm9jZXNzaW5nL0FsaWduZWRfSW1hZ2VzL3IwMmMwNGYwMV9yb3VuZDEtY2gxc2sxZmsxZmwxLnRpZmYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IkNlbGxNYXNrX0dyZWVuIj48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpDZWxsTWFza19HcmVlbiIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6L1VzZXJzL21iOHJnL0Rlc2t0b3AvRml4ZWRfQ2VsbF9DdWx0dXJlX0ltYWdlX1Byb2Nlc3NpbmcvQWxpZ25lZF9JbWFnZXMvcjAyYzA0ZjAxX3JvdW5kLWNoMnNrMWZrMWZsMS50aWZmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJBNTY4Ij48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpBNTY4IiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovVXNlcnMvbWI4cmcvRGVza3RvcC9GaXhlZF9DZWxsX0N1bHR1cmVfSW1hZ2VfUHJvY2Vzc2luZy9BbGlnbmVkX0ltYWdlcy9yMDJjMDRmMDFfcm91bmQtY2gzc2sxZmsxZmwxLnRpZmYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IkE2NDciPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOkE2NDciIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi9Vc2Vycy9tYjhyZy9EZXNrdG9wL0ZpeGVkX0NlbGxfQ3VsdHVyZV9JbWFnZV9Qcm9jZXNzaW5nL0FsaWduZWRfSW1hZ2VzL3IwMmMwNGYwMV9yb3VuZHhtbHNpb24xLjAiY29GOD9PTUVuczovd3cub2lnU21hcy9PTUUwMS02Ij48SW1hZ2Ugc3Q+PFBpeGVscyBlclQiIElIb2VjaHN0IiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovVXNlcnMvbWI4cmcvRGVza3RvcC9GaXhlZF9DZWxsX0N1bHR1cmVfSW1hZ2VfUHJvY2Vzc2luZy9BbGlnbmVkX0ltYWdlcy9yMDJjMDRmMDFfcm91bmQzLWNoc2sxZmtpZmY+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiWj0iMCIvPjwvUHg+PC9DZWxsZW5DZWxsTWFza19HcmVlbiJzazFmazFmbDEudGlmZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iQSI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6QTU2OCJzazFmazFmbDEudGlmZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iNCI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6QTY0NyIgU2l6ZT0iMSIgU2l6ZVg9IjEiWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBaPSIwIkQ9Ij0iMVVJRCBGaW1laWxlOmVyc3JnL29waXhlZF9DZWxfdXJlX0ltYWdlcm9zaW5nL21hZXNyMDJj'
+Metadata_GroupingTags,"[""Metadata_Well"", ""Metadata_Site""]"
+Metadata_Tags,"[""ImageNumber""]"
+Pipeline_Pipeline,"CellProfiler Pipeline: http://www.cellprofiler.org
+Version:5
+DateRevision:425
+GitHash:
+ModuleCount:19
+HasImagePlaneDetails:False
+
+Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    :
+    Filter images?:Images only
+    Select the rule criteria:and (file does contain ""r02c02f05"")
+
+Metadata:[module_num:2|svn_version:'Unknown'|variable_revision_number:6|show_window:False|notes:['The Metadata module optionally allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be contained in the file name and/or location, or in an external file.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Extract metadata?:Yes
+    Metadata data type:Text
+    Metadata types:{}
+    Extraction method count:1
+    Metadata extraction method:Extract from file/folder names
+    Metadata source:File name
+    Regular expression to extract from file name:^r0(?P<Row>\d)c0(?P<Column>\d)f0(?P<Site>\d)_round(?P<Round>\d)-ch(?P<Channel>\d)sk1fk1fl1.tiff
+    Regular expression to extract from folder name:(?P<Date>[0-9]{4}_[0-9]{2}_[0-9]{2})$
+    Extract metadata from:All images
+    Select the filtering criteria:and (file does contain """")
+    Metadata file location:Elsewhere...|
+    Match file and image metadata:[]
+    Use case insensitive matching?:No
+    Metadata file name:None
+    Does cached metadata exist?:No
+
+NamesAndTypes:[module_num:3|svn_version:'Unknown'|variable_revision_number:8|show_window:False|notes:['The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Assign a name to:Images matching rules
+    Select the image type:Grayscale image
+    Name to assign these images:DNA
+    Match metadata:[]
+    Image set matching method:Order
+    Set intensity range from:Image metadata
+    Assignments count:4
+    Single images count:0
+    Maximum intensity:255.0
+    Process as 3D?:No
+    Relative pixel spacing in X:1.0
+    Relative pixel spacing in Y:1.0
+    Relative pixel spacing in Z:1.0
+    Select the rule criteria:and (metadata does Channel ""1"")
+    Name to assign these images:Hoechst
+    Name to assign these objects:Cell
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (metadata does Channel ""2"")
+    Name to assign these images:CellMask_Green
+    Name to assign these objects:Speckle
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (metadata does Channel ""3"")
+    Name to assign these images:A568
+    Name to assign these objects:Nucleus
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (metadata does Channel ""4"")
+    Name to assign these images:A647
+    Name to assign these objects:Cytoplasm
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+
+Groups:[module_num:4|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['The Groups module optionally allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, time-lapse movies, etc.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Do you want to group your images?:Yes
+    grouping metadata count:2
+    Metadata category:Well
+    Metadata category:Site
+
+IdentifyPrimaryObjects:[module_num:5|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:Hoechst
+    Name the primary objects to be identified:Nucleus
+    Typical diameter of objects, in pixel units (Min,Max):9,27
+    Discard objects outside the diameter range?:Yes
+    Discard objects touching the border of the image?:Yes
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Fill holes in identified objects?:After both thresholding and declumping
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Use advanced settings?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Minimum Cross-Entropy
+    Threshold smoothing scale:2
+    Threshold correction factor:1.7
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.008
+    Select the measurement to threshold with:FileName_Hoechst_33342
+    Two-class or three-class thresholding?:Three classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Median
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Otsu
+
+IdentifySecondaryObjects:[module_num:6|svn_version:'Unknown'|variable_revision_number:10|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:Nucleus
+    Name the objects to be identified:Cell
+    Select the method to identify the secondary objects:Propagation
+    Select the input image:CellMask_Green
+    Number of pixels by which to expand the primary objects:10
+    Regularization factor:0.05
+    Discard secondary objects touching the border of the image?:No
+    Discard the associated primary objects?:No
+    Name the new primary objects:FilteredNuclei
+    Fill holes in identified objects?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Minimum Cross-Entropy
+    Threshold smoothing scale:1
+    Threshold correction factor:0.5
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.01
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Three classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifyTertiaryObjects:[module_num:7|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the larger identified objects:Cell
+    Select the smaller identified objects:Nucleus
+    Name the tertiary objects to be identified:Cytoplasm
+    Shrink smaller object prior to subtraction?:Yes
+
+ImageMath:[module_num:8|svn_version:'Unknown'|variable_revision_number:5|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:None
+    Raise the power of the result by:1.0
+    Multiply the result by:1.0
+    Add to result:0.0
+    Set values less than 0 equal to 0?:Yes
+    Set values greater than 1 equal to 1?:Yes
+    Replace invalid values with 0?:Yes
+    Ignore the image masks?:No
+    Name the output image:Hoechst_Times30
+    Image or measurement?:Image
+    Select the first image:Hoechst
+    Multiply the first image by:30
+    Measurement:
+    Image or measurement?:Image
+    Select the second image:
+    Multiply the second image by:1.0
+    Measurement:
+
+OverlayOutlines:[module_num:9|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Display outlines on a blank image?:No
+    Select image on which to display outlines:Hoechst_Times30
+    Name the output image:Hoechst_Nuclei_overlay
+    Outline display mode:Color
+    Select method to determine brightness of outlines:Max of image
+    How to outline:Thick
+    Select outline color:#FB02FF
+    Select objects to display:Nucleus
+
+SaveImages:[module_num:10|svn_version:'Unknown'|variable_revision_number:16|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:Hoechst_Nuclei_overlay
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:Hoechst
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_Round\g<Round>_Seg
+    Saved file format:png
+    Output file location:Default Output Folder sub-folder|Segmented_Images_Hoechst
+    Image bit depth:8-bit integer
+    Overwrite existing files without warning?:Yes
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...|
+    How to save the series:T (Time)
+    Save with lossless compression?:No
+
+ImageMath:[module_num:11|svn_version:'Unknown'|variable_revision_number:5|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:None
+    Raise the power of the result by:1.0
+    Multiply the result by:1.0
+    Add to result:0.0
+    Set values less than 0 equal to 0?:Yes
+    Set values greater than 1 equal to 1?:Yes
+    Replace invalid values with 0?:Yes
+    Ignore the image masks?:No
+    Name the output image:CellMask_Times30
+    Image or measurement?:Image
+    Select the first image:CellMask_Green
+    Multiply the first image by:30
+    Measurement:
+    Image or measurement?:Image
+    Select the second image:None
+    Multiply the second image by:1.0
+    Measurement:
+
+OverlayOutlines:[module_num:12|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Display outlines on a blank image?:No
+    Select image on which to display outlines:CellMask_Times30
+    Name the output image:CellMask_overlay
+    Outline display mode:Color
+    Select method to determine brightness of outlines:Max of image
+    How to outline:Thick
+    Select outline color:#FB02FF
+    Select objects to display:Cell
+
+SaveImages:[module_num:13|svn_version:'Unknown'|variable_revision_number:16|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:CellMask_overlay
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:CellMask_Green
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_Round\g<Round>_Seg
+    Saved file format:png
+    Output file location:Default Output Folder sub-folder|Segmented_Images_Cell_Mask
+    Image bit depth:8-bit integer
+    Overwrite existing files without warning?:Yes
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...|
+    How to save the series:T (Time)
+    Save with lossless compression?:Yes
+
+TrackObjects:[module_num:14|svn_version:'Unknown'|variable_revision_number:7|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Choose a tracking method:Follow Neighbors
+    Select the objects to track:Nucleus
+    Select object measurement to use for tracking:None
+    Maximum pixel distance to consider matches:50
+    Select display option:Color and Number
+    Save color-coded image?:Yes
+    Name the output image:TrackedNuclei
+    Select the movement model:Both
+    Number of standard deviations for search radius:3.0
+    Search radius limit, in pixel units (Min,Max):2.0,10.0
+    Run the second phase of the LAP algorithm?:Yes
+    Gap closing cost:40
+    Split alternative cost:40
+    Merge alternative cost:40
+    Maximum gap displacement, in pixel units:5
+    Maximum split score:50
+    Maximum merge score:50
+    Maximum temporal gap, in frames:5
+    Filter objects by lifetime?:No
+    Filter using a minimum lifetime?:Yes
+    Minimum lifetime:1
+    Filter using a maximum lifetime?:No
+    Maximum lifetime:100
+    Mitosis alternative cost:80
+    Maximum mitosis distance, in pixel units:40
+    Average cell diameter in pixels:15
+    Use advanced configuration parameters:No
+    Cost of cell to empty matching:15.0
+    Weight of area difference in function matching cost:25.0
+
+SaveImages:[module_num:15|svn_version:'Unknown'|variable_revision_number:16|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:TrackedNuclei
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:Hoechst
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_Round\g<Round>_TrackedNuclei
+    Saved file format:png
+    Output file location:Default Output Folder sub-folder|TrackedNuclei
+    Image bit depth:16-bit integer
+    Overwrite existing files without warning?:Yes
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...|
+    How to save the series:T (Time)
+    Save with lossless compression?:Yes
+
+MeasureObjectIntensity:[module_num:16|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:A568, A647, CellMask_Green, Hoechst
+    Select objects to measure:Cell, Cytoplasm, Nucleus
+
+MeasureObjectSizeShape:[module_num:17|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select object sets to measure:Cell, Cytoplasm, Nucleus
+    Calculate the Zernike features?:No
+    Calculate the advanced features?:No
+
+ExportToSpreadsheet:[module_num:18|svn_version:'Unknown'|variable_revision_number:13|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the column delimiter:Comma ("","")
+    Add image metadata columns to your object data file?:No
+    Add image file and folder names to your object data file?:No
+    Select the measurements to export:Yes
+    Calculate the per-image mean values for object measurements?:No
+    Calculate the per-image median values for object measurements?:No
+    Calculate the per-image standard deviation values for object measurements?:No
+    Output file location:Default Output Folder sub-folder|Analysis
+    Create a GenePattern GCT file?:No
+    Select source of sample row name:Metadata
+    Select the image to use as the identifier:None
+    Select the metadata to use as the identifier:None
+    Export all measurement types?:No
+    Press button to select measurements:Image|URL_A568,Image|URL_CellMask_Green,Image|URL_Hoechst,Image|URL_A647,Image|Metadata_Site,Image|Metadata_Row,Image|Metadata_Series,Image|Metadata_Round,Image|Metadata_Well,Image|Metadata_Frame,Image|Metadata_FileLocation,Image|Metadata_Column,Image|Metadata_Channel,Image|Width_CellMask_Green,Image|Width_Hoechst,Image|Width_A647,Image|Width_A568,Image|Scaling_A568,Image|Scaling_CellMask_Green,Image|Scaling_Hoechst,Image|Scaling_A647,Image|ExecutionTime_05IdentifyPrimaryObjects,Image|ExecutionTime_10SaveImages,Image|ExecutionTime_02Metadata,Image|ExecutionTime_03NamesAndTypes,Image|ExecutionTime_12OverlayOutlines,Image|ExecutionTime_04Groups,Image|ExecutionTime_16MeasureObjectIntensity,Image|ExecutionTime_08ImageMath,Image|ExecutionTime_14TrackObjects,Image|ExecutionTime_11ImageMath,Image|ExecutionTime_01Images,Image|ExecutionTime_09OverlayOutlines,Image|ExecutionTime_07IdentifyTertiaryObjects,Image|ExecutionTime_15SaveImages,Image|ExecutionTime_06IdentifySecondaryObjects,Image|ExecutionTime_13SaveImages,Image|Group_Index,Image|Group_Length,Image|Group_Number,Image|ModuleError_10SaveImages,Image|ModuleError_09OverlayOutlines,Image|ModuleError_12OverlayOutlines,Image|ModuleError_15SaveImages,Image|ModuleError_14TrackObjects,Image|ModuleError_11ImageMath,Image|ModuleError_07IdentifyTertiaryObjects,Image|ModuleError_06IdentifySecondaryObjects,Image|ModuleError_04Groups,Image|ModuleError_02Metadata,Image|ModuleError_01Images,Image|ModuleError_05IdentifyPrimaryObjects,Image|ModuleError_16MeasureObjectIntensity,Image|ModuleError_13SaveImages,Image|ModuleError_03NamesAndTypes,Image|ModuleError_08ImageMath,Image|TrackObjects_LostObjectCount_Nucleus_50,Image|TrackObjects_SplitObjectCount_Nucleus_50,Image|TrackObjects_MergedObjectCount_Nucleus_50,Image|TrackObjects_NewObjectCount_Nucleus_50,Image|Threshold_OrigThreshold_Nucleus,Image|Threshold_OrigThreshold_Cell,Image|Threshold_SumOfEntropies_Nucleus,Image|Threshold_SumOfEntropies_Cell,Image|Threshold_WeightedVariance_Nucleus,Image|Threshold_WeightedVariance_Cell,Image|Threshold_FinalThreshold_Cell,Image|Threshold_FinalThreshold_Nucleus,Image|MD5Digest_CellMask_Green,Image|MD5Digest_A568,Image|MD5Digest_Hoechst,Image|MD5Digest_A647,Image|Height_A568,Image|Height_CellMask_Green,Image|Height_A647,Image|Height_Hoechst,Image|FileName_A647,Image|FileName_A568,Image|FileName_CellMask_Green,Image|FileName_Hoechst,Image|Series_CellMask_Green,Image|Series_A568,Image|Series_A647,Image|Series_Hoechst,Image|PathName_Hoechst,Image|PathName_A568,Image|PathName_CellMask_Green,Image|PathName_A647,Image|Frame_CellMask_Green,Image|Frame_Hoechst,Image|Frame_A568,Image|Frame_A647,Image|Count_Nucleus,Image|Count_Cell,Image|Count_Cytoplasm,Cell|Intensity_MeanIntensity_A568,Cell|Intensity_MeanIntensity_A647,Cell|Intensity_MeanIntensity_CellMask_Green,Cell|Intensity_MeanIntensity_Hoechst,Cell|Intensity_IntegratedIntensity_A568,Cell|Intensity_IntegratedIntensity_A647,Cell|Intensity_IntegratedIntensity_Hoechst,Cell|Intensity_IntegratedIntensity_CellMask_Green,Cell|Location_MaxIntensity_Z_CellMask_Green,Cell|Location_MaxIntensity_X_CellMask_Green,Cell|Location_MaxIntensity_Y_CellMask_Green,Cell|Location_CenterMassIntensity_Z_CellMask_Green,Cell|Location_CenterMassIntensity_X_CellMask_Green,Cell|Location_CenterMassIntensity_Y_CellMask_Green,Cell|Location_Center_Z,Cell|Location_Center_Y,Cell|Location_Center_X,Cell|Number_Object_Number,Nucleus|Intensity_IntegratedIntensity_A647,Nucleus|Intensity_IntegratedIntensity_CellMask_Green,Nucleus|Intensity_IntegratedIntensity_A568,Nucleus|Intensity_IntegratedIntensity_Hoechst,Nucleus|Intensity_MeanIntensity_Hoechst,Nucleus|Intensity_MeanIntensity_A568,Nucleus|Intensity_MeanIntensity_CellMask_Green,Nucleus|Intensity_MeanIntensity_A647,Nucleus|Location_MaxIntensity_Z_CellMask_Green,Nucleus|Location_MaxIntensity_X_CellMask_Green,Nucleus|Location_MaxIntensity_Y_CellMask_Green,Nucleus|Location_Center_Y,Nucleus|Location_Center_X,Nucleus|Location_Center_Z,Nucleus|Location_CenterMassIntensity_X_CellMask_Green,Nucleus|Location_CenterMassIntensity_Z_CellMask_Green,Nucleus|Location_CenterMassIntensity_Y_CellMask_Green,Nucleus|TrackObjects_ParentImageNumber_50,Nucleus|TrackObjects_ParentObjectNumber_50,Nucleus|TrackObjects_Linearity_50,Nucleus|TrackObjects_FinalAge_50,Nucleus|TrackObjects_Displacement_50,Nucleus|TrackObjects_IntegratedDistance_50,Nucleus|TrackObjects_Lifetime_50,Nucleus|TrackObjects_DistanceTraveled_50,Nucleus|TrackObjects_TrajectoryY_50,Nucleus|TrackObjects_TrajectoryX_50,Nucleus|TrackObjects_Label_50,Nucleus|Number_Object_Number,Cytoplasm|Intensity_IntegratedIntensity_A568,Cytoplasm|Intensity_IntegratedIntensity_A647,Cytoplasm|Intensity_IntegratedIntensity_CellMask_Green,Cytoplasm|Intensity_IntegratedIntensity_Hoechst,Cytoplasm|Intensity_MeanIntensity_Hoechst,Cytoplasm|Intensity_MeanIntensity_A647,Cytoplasm|Intensity_MeanIntensity_A568,Cytoplasm|Intensity_MeanIntensity_CellMask_Green,Cytoplasm|Location_MaxIntensity_Z_CellMask_Green,Cytoplasm|Location_MaxIntensity_X_CellMask_Green,Cytoplasm|Location_MaxIntensity_Y_CellMask_Green,Cytoplasm|Location_CenterMassIntensity_Z_CellMask_Green,Cytoplasm|Location_CenterMassIntensity_Y_CellMask_Green,Cytoplasm|Location_CenterMassIntensity_X_CellMask_Green,Cytoplasm|Location_Center_X,Cytoplasm|Location_Center_Y,Cytoplasm|Number_Object_Number,Experiment|Run_Timestamp,Experiment|CellProfiler_Version,Experiment|Pipeline_Pipeline,Experiment|Metadata_GroupingTags,Experiment|Modification_Timestamp
+    Representation of Nan/Inf:NaN
+    Add a prefix to file names?:No
+    Filename prefix:MyExpt_
+    Overwrite existing files without warning?:Yes
+    Data to export:Nucleus
+    Combine these object measurements with those of the previous object?:No
+    File name:Round\g<Round>_\g<Well>_site\g<Site>_Measurements.csv
+    Use the object name for the file name?:No
+    Data to export:Cell
+    Combine these object measurements with those of the previous object?:Yes
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+    Data to export:Cytoplasm
+    Combine these object measurements with those of the previous object?:Yes
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+    Data to export:Image
+    Combine these object measurements with those of the previous object?:No
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+    Data to export:Experiment
+    Combine these object measurements with those of the previous object?:No
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+
+CreateBatchFiles:[module_num:19|svn_version:'Unknown'|variable_revision_number:8|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Store batch files in default output folder?:No
+    Output folder path:/Users/mb8rg/Desktop/Fixed_Cell_Culture_4i_image_analysis
+    Are the cluster computers running Windows?:No
+    Hidden- in batch mode:No
+    Hidden- in distributed mode: in distributed mode:No
+    Hidden- default input folder at time of save: default input folder at time of save:/Volumes/FallahiLab/Maize-Data/Operetta-CLS/Luisa Quesada/20210617_MMACSF_CDK1_CDK4-6_CDK7_EdU_Hoechst
+    Hidden- revision number: revision number:0
+    Hidden- from old matlab: from old matlab:No
+"
+Run_Timestamp,2024-05-03T15:57:31.319141
