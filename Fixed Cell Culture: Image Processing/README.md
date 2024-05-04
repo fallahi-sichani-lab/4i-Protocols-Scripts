@@ -30,6 +30,8 @@ Round 2: NGFR (Channel 3; cytoplasm) and SOX10 (Channel 4; nuclear)
 Round 3: AXL (Channel 3; cytoplasm) and cJUN (Channel 4; nuclear)   
 Note: The expression of some of these proteins is low in COLO858, particularly NGFR, AXL, and cJUN. 
 
+Folders called "Background_Subtracted_Images", "Alignment_results", "Aligned_Images", "Segmeneted_Images_Hoechst", "Segmented_Images_Cell_Mask", "TrackedNuclei", and "Analysis" contain intermediate and final files from the analysis of the Example Images.
+
 ## Background subtraction
 Perform background subtraction using the rolling ball subtraction algorithm in ImageJ Fiji<Sup>1</Sup> with a ball radius of 50. 
 
