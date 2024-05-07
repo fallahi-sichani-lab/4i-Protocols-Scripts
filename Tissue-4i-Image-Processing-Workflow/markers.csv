@@ -1,0 +1,13 @@
+﻿cycle,marker_name,background,exposure,remove
+1,Hoechst_postq,,25,
+1,AF488_postq,,150,TRUE
+1,AF568_postq,,150,TRUE
+1,AF647_postq,,300,TRUE
+2,Hoechst_round1,,25,
+2,AF488_NGFR,AF488_postq,150,
+2,AF568_SOX10,AF568_postq,150,
+2,AF647_MITF,AF647_postq,350,
+3,Hoechst_round2,,25,
+3,AF488_blank,AF488_postq,150,
+3,AF568_CD45,AF568_postq,250,
+3,AF647_CD3,AF647_postq,150,
