@@ -83,7 +83,7 @@ To account for small shifts in image position across rounds, images are aligned 
 	- The regular expression used to extract the `Row`, `Column`, `Site`, and `Channel` numbers: `r0(?P<Row>\d)c0(?P<Column>\d)f0(?P<Site>\d)p01-ch(?P<Channel>\d)sk1fk1fl1.tiff`
 	
 	This is how the table at the bottom should look like after pressing "Update" for the Example Images.   
-	<img width="675" alt="Align_metadata" src="https://github.com/mb8rg/Fixed-Cell-Culture-Image-Processing/assets/107584055/70919d02-c223-45be-b935-2b9a90f53bc6">
+	<img width="675" alt="Align_metadata" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/35abfa57-eab6-464a-adec-48663a72787a">
 
 	Note: The example images are all from the same row and field of view, so to analyze these images it is not technically necessary to extract `Row` and `Site`. Here, I am showing how to extract all of the metadata information because typical experiments contain more wells. 
 	
