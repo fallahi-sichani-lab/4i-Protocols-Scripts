@@ -89,11 +89,11 @@ To account for small shifts in image position across rounds, images are aligned 
 	
 	<ins>**2.3 NameAndTypes module**:</ins> Assign names to each round number. Only use images with channel number matching 1 (Hoechst stain) because we only want to use the nuclei stain for obtaining the alignment information. Note: If you are getting an error, ensure that the Groups module is updated to your own experimental conditions. Press update and check if images are categorized correctly.
 	This is how the table at the bottom should look like after pressing "Update" for the Example Images.  
-	<img width="495" alt="Align_names" src="https://github.com/mb8rg/Fixed-Cell-Culture-Image-Processing/assets/107584055/3772a2ad-316b-4908-b42f-55e386ebdc8f">
+	<img width="495" alt="Align_names" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/d488c431-4981-4da6-b030-8b425f0688d7">
 
 	<ins>**2.4 Groups module**:</ins> Group the images by `Well` and `Site`. If your experiment includes multiple plates, then group the images by plate number. We want each Group to contain one image for each round.
 	This is how the Image Sets table  should look like for the Example Images.  
- 	<img width="1125" alt="Align_groups" src="https://github.com/mb8rg/Fixed-Cell-Culture-Image-Processing/assets/107584055/ecfd708b-5f2d-4415-846a-9f6a2f8c8eb6">
+ 	<img width="1125" alt="Align_groups" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/08a00ad4-6438-4d2d-af69-1e3b1d5dbf47">
 
 	<ins>**2.5 Align module**:</ins> Set the alignment method to “Normalized Cross Correlation”, crop mode to “Keep size” and input all of the rounds of imaging as the first input image, second input image, etc. In this example, there are only three rounds. 
 	 
@@ -117,9 +117,9 @@ Use the X and Y shifts saved from CellProfiler to align and crop images from all
 1. Open “Fixed_Cell_Culture_4i_Image_shift_and_crop” script in MATLAB.
 2. Change the following variable in the top section: `project path, output_path, number_of_rounds, original_image_size, channels` according to your experimental design. The example images have 3 rounds, 1080x1080 pixel size, and there are 4 channels in each round.
 3. Press "Run". The aligned and cropped images will be saved in the output folder. Inspect images in Fiji to ensure that the images are aligned across each round. The MATLAB script includes the round number in the file name. If the entire output folder is opened with Fiji, the images from the same row, column, and field of view should be grouped together, making it easier to check for changes in the alignment across all rounds.     
-	 <img width="500" alt="Before_and_after_aligment1" src="https://github.com/mb8rg/Fixed-Cell-Culture-Image-Processing/assets/107584055/92d83781-14f8-4f9c-b254-1147d652cf13">    
+	 <img width="500" alt="Before_and_after_aligment1" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/d63aeac1-c319-48cc-a357-a25f468a2225">    
 	Figure 1: Merged Hoechst images from round 1 (red), round 2 (green), and round 3 (blue) before and after alignment (Example images with the prefix "r02c02f01").
-  
+
 ## Segmentation and Tracking
 Segmentation and Tracking is done using CellProfiler. Tracking module is particularly  computationally time consuming, so we recommend to initially analyze the images without tracking to ensure that the segmentation  works on all images. Segmentation of nuclei and cell cytoplasm is made based on the Hoechst stain and CellMask Green stain, respectively. 
 
@@ -136,10 +136,10 @@ Segmentation and Tracking is done using CellProfiler. Tracking module is particu
 	- The regular expression used to extract the `Row`, `Column`, `Site`, and `Channel` numbers: `^r0(?P<Row>\d)c0(?P<Column>\d)f0(?P<Site>\d)_round(?P<Round>\d)-ch(?P<Channel>\d)sk1fk1fl1.tiff`
 		
 	<ins>**2.3 NameAndTypes module**:</ins> Assign names to each channel. Press update and check if images are categorized correctly.   
-  	<img width="675" alt="Segmentation_names" src="https://github.com/mb8rg/Fixed-Cell-Culture-Image-Processing/assets/107584055/3690840e-0fd8-411a-8cc0-6273c85c8755">
+  	<img width="675" alt="Segmentation_names" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/45798271-b392-4e1f-8ae5-79f5d2728e79">
 
 	<ins>**2.4 Groups module**:</ins> Group the images by `Well`, `Site`, and any condition other than round number. The number of images in each group should be equal to the number of rounds. 
-	<img width="1700" alt="Segmentation_groups" src="https://github.com/mb8rg/Fixed-Cell-Culture-Image-Processing/assets/107584055/7f19d0b3-0185-4373-bf0c-82e03edffaeb"> 
+	<img width="1700" alt="Segmentation_groups" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/0d6cd87d-c9e8-4fb7-a565-325d4a87023d"> 
 
 	<ins>**2.5 IdentifyPrimaryObjects module**:</ins> Using minimum cross-entropy thresholding method, identify nuclei based on DAPI/Hoechst signal. If the segmentation does not look good, this step can be optimized by changing threshold smoothing scale, threshold correction factor or trying other thresholding methods. In particular, if there is a lot of background noise, Manual thresholding methods work well. You can use the Test Mode to determine settings that work best for your images. 
 	
@@ -154,8 +154,8 @@ Segmentation and Tracking is done using CellProfiler. Tracking module is particu
 	
 	<ins>**2.10 First SaveImages module**:</ins> Save the `Hoechst_Nuclei_overlay` image. These images should be used to check for proper nuclei segmentation after the analysis is done. It is important to check every image, because a segmentation may work for majority of the images and not work for a few. 
 
-	 <img width="400" alt="r02c02f01_round1-ch1sk1fk1fl1_Round1_Seg" src="https://github.com/mb8rg/Fixed-Cell-Culture-Image-Processing/assets/107584055/c93bc1d6-49a7-4ce3-b062-aea4afa3faa7">
-	
+	 <img width="400" alt="r02c02f01_round1-ch1sk1fk1fl1_Round1_Seg" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/fc74686a-3385-49e3-8de1-937eba281f6a">
+
 	Figure 2: Example `Hoechst_Nuclei_overlay` image (r02c02f01_round1).
 
 	The following three modules are used to check the quality of the cell segmentation in IndentifySecondaryObjects module.    
@@ -165,15 +165,15 @@ Segmentation and Tracking is done using CellProfiler. Tracking module is particu
 	
 	<ins>**2.13 Second SaveImages module**:</ins> Save the `CellMask_overlay` image. These images should be used to check for proper cell segmentation after the analysis is done. 
 
-	 <img width="400" alt="r02c02f01_round1-ch2sk1fk1fl1_Round1_Seg" src="https://github.com/mb8rg/Fixed-Cell-Culture-Image-Processing/assets/107584055/de9b5c40-d1d4-4ecc-856f-ac1ed676621e">
-	
+	 <img width="400" alt="r02c02f01_round1-ch2sk1fk1fl1_Round1_Seg" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/594df78e-232b-4941-abdf-5daf9117370c">
+
  	Figure 3: Example `CellMask_overlay` image (r02c02f01_round1).
  
 	<ins>**2.14 TrackObjects module**:</ins>: Use the Follow Neighbors method to tracking the nuclei across rounds. Each nucleus will be given a unique identifier number across the rounds. If a new nucleus appears in later rounds, it will he given new number. This can occur because it is difficult to obtain perfect nuclei segmentation. However, most of the nuclei should be tracked across all rounds. If majority of nuclei are not tracked across all rounds, it is an indication of either poor segmentation or cell detachment/movement during the different rounds of the experiment. 
 	
 	<ins>**2.15 Third SaveImages module**:</ins>: Save TrackedNuclei images.  
 	
- 	<img width="1000" alt="Tracking" src="https://github.com/mb8rg/Fixed-Cell-Culture-Image-Processing/assets/107584055/27e7b875-2353-47a5-95a0-74e38e2089cd">
+ 	<img width="1000" alt="Tracking" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/9f344e6b-b09c-421c-bb61-45042b3152a4">
   	Figure 4: Example images from tracking. The numbers are unique identifiers of each nuclei across the rounds. In this example, most of the nuclei have the same numbers in each of the three rounds. However, it is normal for there to be a few nuclei that are not tracked throughout all of the rounds due to imperfect segmentation (white arrow in the zoomed images shows an example). 
 	
 	<ins>**2.16 MeasureObjectIntensity module**:</ins> Select Hoechst, CellMask_Green, and any other channel from which you want to measure the intensity. Select Nucleus, Cell, and Cytoplasm as objects to be measured. 
@@ -197,9 +197,7 @@ Segmentation and Tracking is done using CellProfiler. Tracking module is particu
 The resulting comma-separated text files for each image will contain one row for each cell. Columns will contain nucleus, cell, and cytoplasm intensity measurements for each fluorescence channel. Additionally, there will be a column with a unique identifier (called “TrackedObjects_Label_50”) for each cell and a column with the number of rounds in which each cell was detected (called “TrackedObjects_Lifetime_50"). When organizing the data, I like to use the “TrackedObjects_Lifetime_50” column from the Measurement.csv file from the final round to identify the cells/objects that are present in every round of the experiment. Then, I use the “TrackedObjects_Label_50” to identify the same cell/object in each round. Additional organization and analysis of data can be performed with MATLAB, R, or Python.   
 
 The following is an example of “TrackedObjects_Label_50” and “TrackedObjects_Lifetime_50" for a few cells in round 3 of "r02c02f01" images.   
-<img width="255" alt="tracking_table" src="https://github.com/mb8rg/Fixed-Cell-Culture-Image-Processing/assets/107584055/cbecb8aa-a4d7-43c0-8d1b-46d8ddeb22ec">
-
-
+<img width="255" alt="tracking_table" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/64fd5e3a-8055-4928-b688-78540fdf9652">
 
 ## References
 1. Schindelin, J., Arganda-Carreras, I., Frise, E., Kaynig, V., Longair, M., Pietzsch, T., Preibisch, S., Rueden, C., Saalfeld, S., Schmid, B., et al. (2012). Fiji: an open-source platform for biological-image analysis. Nat. Methods 9, 676–682. 10.1038/nmeth.2019.
