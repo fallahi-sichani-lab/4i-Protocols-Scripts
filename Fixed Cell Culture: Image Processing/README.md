@@ -121,7 +121,7 @@ Use the X and Y shifts saved from CellProfiler to align and crop images from all
 	Figure 1: Merged Hoechst images from round 1 (red), round 2 (green), and round 3 (blue) before and after alignment (Example images with the prefix "r02c02f01").
 
 ## Segmentation and Tracking
-Segmentation and Tracking is done using CellProfiler. Tracking module is particularly  computationally time consuming, so we recommend to initially analyze the images without tracking to ensure that the segmentation  works on all images. Segmentation of nuclei and cell cytoplasm is made based on the Hoechst stain and CellMask Green stain, respectively. 
+Segmentation and Tracking is done using CellProfiler. Tracking module is particularly  computationally time consuming, so we recommend to initially analyze the images without tracking to ensure that the chosen segmentation method works on all images. Segmentation of nuclei and cell cytoplasm is made based on the Hoechst stain and CellMask Green stain, respectively. 
 
 1. Open CellProfiler and drag and drop the Fixed_Cell_Culture_4i_Segmentation_and_Tracking.cpproj pipeline to the left panel.
    
@@ -133,7 +133,7 @@ Segmentation and Tracking is done using CellProfiler. Tracking module is particu
 		
 	For Example Images, extract `Round`, `Row`, `Column`, `Site`, and `Channel` numbers from the file names:
 	- Example file name: "r02c02f01_round1-ch1sk1fk1fl1.tiff"
-	- The regular expression used to extract the `Row`, `Column`, `Site`, and `Channel` numbers: `^r0(?P<Row>\d)c0(?P<Column>\d)f0(?P<Site>\d)_round(?P<Round>\d)-ch(?P<Channel>\d)sk1fk1fl1.tiff`
+	- The regular expression used to extract the `Row`, `Column`, `Site`, `Round`, and `Channel` numbers: `^r0(?P<Row>\d)c0(?P<Column>\d)f0(?P<Site>\d)_round(?P<Round>\d)-ch(?P<Channel>\d)sk1fk1fl1.tiff`
 		
 	<ins>**2.3 NameAndTypes module**:</ins> Assign names to each channel. Press update and check if images are categorized correctly.   
   	<img width="675" alt="Segmentation_names" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/45798271-b392-4e1f-8ae5-79f5d2728e79">
@@ -141,7 +141,7 @@ Segmentation and Tracking is done using CellProfiler. Tracking module is particu
 	<ins>**2.4 Groups module**:</ins> Group the images by `Well`, `Site`, and any condition other than round number. The number of images in each group should be equal to the number of rounds. 
 	<img width="1700" alt="Segmentation_groups" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/0d6cd87d-c9e8-4fb7-a565-325d4a87023d"> 
 
-	<ins>**2.5 IdentifyPrimaryObjects module**:</ins> Using minimum cross-entropy thresholding method, identify nuclei based on DAPI/Hoechst signal. If the segmentation does not look good, this step can be optimized by changing threshold smoothing scale, threshold correction factor or trying other thresholding methods. In particular, if there is a lot of background noise, Manual thresholding methods work well. You can use the Test Mode to determine settings that work best for your images. 
+	<ins>**2.5 IdentifyPrimaryObjects module**:</ins> Using minimum cross-entropy thresholding method, identify nuclei based on DAPI/Hoechst signal. If the segmentation does not look good, this step can be optimized by changing threshold smoothing scale, threshold correction factor or trying other thresholding methods. In particular, if there is a lot of background noise, Manual thresholding method works well. You can use the Test Mode to determine settings that work best for your images. 
 	
 	<ins>**2.6 IdentifySecondaryObjects module**:</ins> Use CellMask Green images to determine the outline of the cell around the nuclei identified from the IdentifyPrimaryObjects module. The thresholding method, threshold smoothing scale, and threshold correction factor should be adjusted based on your images. 
 	
@@ -152,7 +152,7 @@ Segmentation and Tracking is done using CellProfiler. Tracking module is particu
 	
 	<ins>**2.9 First OverlayOutline module**:</ins> Overlay `Hoechst_Times30` image with the outline of nuclei (from IdentifyPrimaryObjects module) and name the output image as `Hoechst_Nuclei_overlay`. 
 	
-	<ins>**2.10 First SaveImages module**:</ins> Save the `Hoechst_Nuclei_overlay` image. These images should be used to check for proper nuclei segmentation after the analysis is done. It is important to check every image, because a segmentation may work for majority of the images and not work for a few. 
+	<ins>**2.10 First SaveImages module**:</ins> Save the `Hoechst_Nuclei_overlay` image. These images should be used to check for proper nuclei segmentation after the analysis is done. It is important to check every image, because a segmentation method may work well for the majority of the images and not work for a few images. 
 
 	 <img width="400" alt="r02c02f01_round1-ch1sk1fk1fl1_Round1_Seg" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/fc74686a-3385-49e3-8de1-937eba281f6a">
 
@@ -169,9 +169,9 @@ Segmentation and Tracking is done using CellProfiler. Tracking module is particu
 
  	Figure 3: Example `CellMask_overlay` image (r02c02f01_round1).
  
-	<ins>**2.14 TrackObjects module**:</ins>: Use the Follow Neighbors method to tracking the nuclei across rounds. Each nucleus will be given a unique identifier number across the rounds. If a new nucleus appears in later rounds, it will he given new number. This can occur because it is difficult to obtain perfect nuclei segmentation. However, most of the nuclei should be tracked across all rounds. If majority of nuclei are not tracked across all rounds, it is an indication of either poor segmentation or cell detachment/movement during the different rounds of the experiment. 
+	<ins>**2.14 TrackObjects module**:</ins> Use the Follow Neighbors method to track nuclei across each round. Each nucleus will be given a unique identifier number across the rounds. If a new nucleus appears in later rounds, it will be given new number. This can occur because it is difficult to obtain perfect nuclei segmentation. However, most of the nuclei should be tracked across all rounds. If majority of nuclei are not tracked across all rounds, it is an indication of either poor segmentation or cell detachment/movement during the different rounds of the experiment. 
 	
-	<ins>**2.15 Third SaveImages module**:</ins>: Save TrackedNuclei images.  
+	<ins>**2.15 Third SaveImages module**:</ins> Save TrackedNuclei images.  
 	
  	<img width="1000" alt="Tracking" src="https://github.com/fallahi-sichani-lab/4i-Protocols-Scripts/assets/107584055/9f344e6b-b09c-421c-bb61-45042b3152a4">
   	Figure 4: Example images from tracking. The numbers are unique identifiers of each nuclei across the rounds. In this example, most of the nuclei have the same numbers in each of the three rounds. However, it is normal for there to be a few nuclei that are not tracked throughout all of the rounds due to imperfect segmentation (white arrow in the zoomed images shows an example). 
