@@ -21,10 +21,11 @@ If not using the Operetta, the Index.idx.xml file can be replaced with a pyramid
 
 ## Experimental set-up
 
-In this vignette, we demonstrate the workflow we used to visualize the data in Figure 4. For a tutorial, we provided three folders of raw images from Operetta imaging that can be found (INSERT LINK)
+In this vignette, we demonstrate the workflow we used to visualize the data in Figure 4. For a tutorial, we provided three folders of raw images from Operetta imaging, including:
 * Postquench images taken after autofluorescence quenching, for the purpose of subtraction in later rounds
 * Round 1 images where we immunostained for differentiation state markers NGFR (AF488), SOX10 (AF568), and MITF (AF647)
 * Round 2 images where we immunostained for a pan-immune cell marker (CD45) and T-cell marker (CD3).
+These files can be found here: https://figshare.com/s/750147eec9e819ecc7a5
 
 We also include the markers.csv and params.yml files required to run MCMICRO. 
 
