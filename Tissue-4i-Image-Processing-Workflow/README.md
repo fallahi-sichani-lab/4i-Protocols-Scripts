@@ -2,6 +2,8 @@
 
 This vignette provides step-by-step processing and visualizing instructions for Iterative Indirect Immunofluorescence Imaging (4i) data for formalin-fixed paraffin embedded tissue sections obtained following the tissue-4i protocol from:
 
+Hsu J\*, Nguyen KT\*, Bujnowska M, Janes KA, Fallahi-Sichani M. Iterative indirect immunofluorescence imaging in cultured cells, tissue sections, and metaphase chromosome spreads. STAR Protocols 2024. [\*Equal contributions]
+
 In this protocol, we utilized the Revvity Operetta CLS High-Content analysis system to generate whole slide images of multiplexed protein localization on tissue. The Operetta consecutively images up to four slides at once and deposits those raw images into the same output folder. Thus, in this workflow, we have ASHLAR utilize the Index.idx.xml metadata to determine which TIFF files are attributed to each slide. ASHLAR then runs stitching and registration for all four slides consecutively to create four outputs. However, we are showing one slide for this vignette.
 
 If not using the Operetta, the Index.idx.xml file can be replaced with a pyramidal image file that represents a single slide of imaging (ex.Melanoma1.lif for images obtained on a Leica). Alternatively, one can solely use the MCMICRO workflow starting from illumination correction if the input file is compatible (which Operetta outputs are not). Depending on the microscopy platform, input may require regular expressions to define the filenames. Please refer to [MCMICRO documentation](https://mcmicro.org/io.html) to determine the correct input.  
