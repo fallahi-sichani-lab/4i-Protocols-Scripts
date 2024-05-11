@@ -193,7 +193,7 @@ Segmentation and Tracking is done using CellProfiler. Tracking module is particu
 		./cp -r -c -p <path to Batch_data.h5 file> -f 1 -l <number of the last image>
 ```
 
-## Further analysis of the resulting text file
+## Further analysis of the resulting text files
 The resulting comma-separated text files for each image will contain one row for each cell. Columns will contain nucleus, cell, and cytoplasm intensity measurements for each fluorescence channel. Additionally, there will be a column with a unique identifier (called “TrackedObjects_Label_50”) for each cell and a column with the number of rounds in which each cell was detected (called “TrackedObjects_Lifetime_50"). When organizing the data, I like to use the “TrackedObjects_Lifetime_50” column from the Measurement.csv file from the final round to identify the cells/objects that are present in every round of the experiment. Then, I use the “TrackedObjects_Label_50” to identify the same cell/object in each round. Additional organization and analysis of data can be performed with MATLAB, R, or Python.   
 
 The following is an example of “TrackedObjects_Label_50” and “TrackedObjects_Lifetime_50" for a few cells in round 3 of "r02c02f01" images.   
