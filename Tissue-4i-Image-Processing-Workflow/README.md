@@ -1,4 +1,4 @@
-# Tissue-4i-Image-Processing-Workflow
+# Tissue 4i Image Processing Workflow
 
 This vignette provides step-by-step processing and visualizing instructions for Iterative Indirect Immunofluorescence Imaging (4i) data for formalin-fixed paraffin embedded tissue sections obtained following the tissue-4i protocol from:
 
