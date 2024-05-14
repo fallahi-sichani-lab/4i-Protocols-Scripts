@@ -28,7 +28,7 @@ In this vignette, we demonstrate the workflow we used to visualize the data in F
 
 These files can be found here: https://figshare.com/s/750147eec9e819ecc7a5
 
-We also include the markers.csv and params.yml files required to run MCMICRO. 
+On this Github, we also include the markers.csv and params.yml files required to run MCMICRO. 
 
 ## BaSiC Illumination Correction 
 Set PROJECT_DIR as the directory that contains imagej_basic_ashlar.py, params.yml, markers.csv, and the Operetta output folders that contain the raw images.
