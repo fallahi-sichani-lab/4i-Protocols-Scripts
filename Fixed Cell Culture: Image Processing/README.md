@@ -5,7 +5,7 @@ Date: May 1, 2024
 
 This vignette provides step-by-step procedure for processing and analyzing Iterative Indirect Immunofluorescence Imaging (4i) data for fixed adherent cells obtained following the fixed cell 4i protocol from:   
    
-Hsu J\*, Nguyen KT\*, Bujnowska M, Janes KA, Fallahi-Sichani M. Iterative indirect immunofluorescence imaging in cultured cells, tissue sections, and metaphase chromosome spreads. Submitted to STAR Protocols (Under minor revision, 2024). [\*Equal contributions]
+Hsu J*, Nguyen KT*, Bujnowska M, Janes KA, Fallahi-Sichani M. Protocol for iterative indirect immunofluorescence imaging in cultured cells, tissue sections, and metaphase chromosome spreads. STAR Protocols (2024). [\*Equal contributions]
 
 ## Required software
 - Fiji
